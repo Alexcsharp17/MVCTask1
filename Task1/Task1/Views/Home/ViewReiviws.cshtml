@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Task1.Models.Review>
+
+@{
+    ViewBag.Title = "ViewReiviws";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ViewReiviws</h2>
+
+<p>
+    @Html.ActionLink("Add  New", "Reviws")
+</p>
+
+
+@foreach (var item in Model) {
+    
+        <h3>@Html.DisplayFor(modelItem => item.Name)</h3>   
+        
+        
+        <p>@Html.DisplayFor(modelItem => item.Text)</p>  
+        <br />
+        
+        <p> @Html.DisplayFor(modelItem => item.Time)</p> 
+       
+            
+       
+}
+
+

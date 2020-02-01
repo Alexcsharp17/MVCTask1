@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Result</h2>
+
+@if (ViewBag.Res == true)
+{
+    <p>@ViewBag.Name , Your answers was correct</p>
+}
+else
+{
+    <p>@ViewBag.Name, Your answer is Incorrect. Try Again.</p>
+}

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Task1.Models.Article>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="cont container">
+    <div class="row  text-center">
+
+        <div class="main-body col-10">
+            <p>
+                @Html.ActionLink("Add New", "AddArticle")
+            </p>
+
+
+            @foreach (var item in Model)
+            {
+
+                <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                <br />
+                @Html.DisplayFor(modelItem => item.Description)
+                <br />
+                @Html.DisplayFor(modelItem => item.Date)
+
+
+
+            }
+
+
+        </div>
+        <div class="right-sidebar col-2">
+
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-dark">  @Html.ActionLink("Главная", "Index")</button>
+                <button type="button" class="btn btn-dark">  @Html.ActionLink("Гостевая", "ViewReiviws")</button>
+                <button type="button" class="btn btn-dark">  @Html.ActionLink("Анкета", "Ancet")</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
