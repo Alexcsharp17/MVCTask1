@@ -1,13 +1,29 @@
 ﻿body {
-    height: 100%;
-    padding-bottom: 20px;
-    min-height: 100%;
-    position:relative;
+   position:relative;
+  
+   background-color:dimgrey;
+    
 }
-html {
-    min-height: 100%;
-    position: relative;
+footer {
+  
+    position:fixed;
+    bottom:0px;
+    height:50px;
+    background-color:cadetblue;
 }
+.content{
+    min-height: calc(100%-50px);
+    margin-bottom:-50px;
+}
+.content:after{
+    content:'';
+    display:block;
+    height:50px;
+}
+
+
+
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -31,9 +47,7 @@ textarea {
 .slogan{
     text-align:center;
 }
-.mynav{
-   
-}
+
 .logo{
     height:70px;
     width:70px;
@@ -42,21 +56,20 @@ textarea {
     width:80%;
     
 }
-.main-body{
-    background-color:antiquewhite;
-    text-align:left;
+.main-body {
+    background-color: antiquewhite;
+    text-align: left;
+    border: 2px dashed black;
 }
 .main-body h3{
     text-align:center;
+   
 }
-footer{
-    background-color:lightblue;
-    position:fixed;
-    bottom:0;
-    
-}
+
 .anchor{
     float:right;
+    color:black;
+    text-decoration:none;
    
     
 }
@@ -70,5 +83,21 @@ footer{
 .cont{
     padding-top:10px;
 }
+.Ancet-body{
+    padding:20px;
+    background-color:azure;
+    padding-left:20%;
+    border:10px dotted red;
+   min-height:100%;
+}
+.cor_answ {
+    color: green;
+    font-size: 20px;
+}
+.wr_answ {
+    color: red;
+    font-size: 20px;
+}
+
 
 
