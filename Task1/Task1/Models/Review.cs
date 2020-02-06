@@ -16,6 +16,7 @@ namespace Task1.Models
         public string Name { get; set; }
         [Display(Name = "Text")]
         [Required(ErrorMessage = "Please leave your comment")]
+       
         public string Text { get; set; }
         [HiddenInput(DisplayValue = false)]
         public DateTime Time { get; set; }

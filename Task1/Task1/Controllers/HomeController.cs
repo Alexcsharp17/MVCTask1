@@ -36,15 +36,19 @@ namespace Task1.Controllers
         [HttpGet]
         public ActionResult Reviws()
         {
-            return View();
+            Review review = new Review();
+            return View(review);
         }
         [HttpPost]
         public ActionResult Reviws(Review review)
         {
-            review.Time = DateTime.Now;
-            db.Reviews.Add(review);
-            db.SaveChanges();
-            ViewBag.AddStatus = true;
+            if (ModelState.IsValid) {
+                review.Time = DateTime.Now;
+                db.Reviews.Add(review);
+                db.SaveChanges();
+                ViewBag.AddStatus = true;
+            }
+            
             return View();
         }
         [HttpGet]
