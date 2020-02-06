@@ -1,24 +1,33 @@
-﻿body {
+﻿body ,html{
    position:relative;
   
-   background-color:dimgrey;
-    
+   background-color:lightblue;
+    height:100%;
+    min-height:100%;
 }
 footer {
-  
-    position:fixed;
-    bottom:0px;
+    bottom:0;
     height:50px;
     background-color:cadetblue;
 }
 .content{
-    min-height: calc(100%-50px);
-    margin-bottom:-50px;
+    /*min-height: calc(100%-50px);
+    margin-bottom:-50px;*/
+    flex-grow:1;
 }
+/*
 .content:after{
     content:'';
     display:block;
-    height:50px;
+}
+
+.content:after, .footer{
+    height: 50px;
+}*/
+
+body {
+    display:flex;
+    flex-direction:column;
 }
 
 
@@ -57,7 +66,7 @@ textarea {
     
 }
 .main-body {
-    background-color: antiquewhite;
+    background-color: lightblue;
     text-align: left;
     border: 2px dashed black;
 }
@@ -97,6 +106,15 @@ textarea {
 .wr_answ {
     color: red;
     font-size: 20px;
+}
+.rev-cont{
+    padding:10px;
+    border:2px dotted black;
+    border-radius:5px;
+    padding-left:40%;
+}
+.to-list{
+    padding-left:20px;
 }
 
 

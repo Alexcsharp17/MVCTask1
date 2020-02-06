@@ -16,11 +16,7 @@ namespace Task1.Models
             db.Articles.Add(new Article { Name = "Article", Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id mollis purus. Pellentesque imperdiet felis odio, in hendrerit nisi semper ac. Duis mauris felis, sodales euismod ex at, tempor condimentum tortor. Maecenas vel faucibus nunc. Maecenas a nisi sed lectus tempor venenatis. Curabitur id velit imperdiet, ultrices mi a, consequat lorem. Vestibulum non consectetur libero, ac sagittis odio. Sed at lorem nec mi varius porta. Pellentesque interdum massa vel magna ultrices placerat a ac diam. Pellentesque neque libero, iaculis ac vulputate et, varius vitae urna. Curabitur rutrum eget lacus dignissim luctus. Cras accumsan in lectus in sollicitudin. Morbi enim mi, vestibulum eu sapien quis, tristique rutrum ligula. Quisque nec ante dui. ", Date = "01.02.2020" });
             db.Reviews.Add(new Review { Name = "Alex", Text = "This is very interesting blog. I would like to chek it out later.",Time=DateTime.Now});
             db.Reviews.Add(new Review { Name = "Alex", Text = "This is very interesting blog. I would like to chek it out later.",Time=DateTime.Now });
-            db.Reviews.Add(new Review { Name = "Alex", Text = "This is very interesting blog. I would like to chek it out later.",Time=DateTime.Now });
-            db.Reviews.Add(new Review { Name = "Alex", Text = "This is very interesting blog. I would like to chek it out later.",Time=DateTime.Now });
-            db.Reviews.Add(new Review { Name = "Alex", Text = "This is very interesting blog. I would like to chek it out later.",Time=DateTime.Now });
-            db.Reviews.Add(new Review { Name = "Alex", Text = "This is very interesting blog. I would like to chek it out later.",Time=DateTime.Now });
-            base.Seed(db);
+            
         }
 
     }
